@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>蜡笔小新</title>
+  <style>
+    /* 导航栏样式 */
+    .navbar {
+      background-color: yellow; /* 黄色背景 */
+      padding: 5px 20px;
+      position: fixed; /* 固定在顶部 */
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: flex; /* 使用Flex布局实现水平排列 */
+      align-items: center; /* 垂直居中 */
+      justify-content: space-between; /* 子元素均匀分布 */
+    }
+    
+/*导航栏文字间距*//* 第一个和最后一个元素去除外边距以避免整体偏移 */
+.nav-item:first-child {
+  margin-left: 150px;
+}
+.nav-item:last-child {
+  margin-right: 150px;
+}
+
+
+
+    /* 图片样式，可控制大小 */
+.banner-image {
+  width: 100vw;             /* 铺满屏幕宽度 */
+  height: 550px;            /* 自定义高度（可调整） */
+  object-fit: cover;        /* 图片裁剪适应容器 */
+  object-position: center;  /* 图片以中心为基准显示 */
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 图片下方文字样式 */
+.banner-text {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 18px;
+  color: hsla(12, 90%, 46%, 0.916);
+  font-weight: bold;
+}
+
+.page-content {
+  /* max-width: 100px; */     /* 删除或注释这一行 */
+  margin: 0;                  /* 修改为 0，让内容靠左对齐 */
+  padding: 0 0px;            /* 可选：增加一点边距，提升美观 */
+}
+/* 新增文字样式 */
+.banner-text2 {
+  text-align: left;             /* 左对齐 */
+  margin-top: -10px;              /* 距离上一行文字的小间距 */
+  font-size: 14px;              /* 字号 */
+  color: hsla(60, 3%, 6%, 0.8); /* 颜色（可自定义） */
+  font-weight: normal;          /* 可选：不加粗 */
+}
+
+
+  </style>
+</head>
+<body>
+
+<!-- 顶部导航栏 -->
+<div class="navbar">
+  <span class="nav-item">首页</span>
+  <span class="nav-item">剧情简介</span>
+  <span class="nav-item">人物介绍</span>
+  <span class="nav-item">图片鉴赏</span>
+  <span class="nav-item">登录/注册</span>
+</div>
+
+<!-- 页面内容区域 -->
+<div class="page-content">
+  <!-- 插入图片 -->
+ 
+  <img src="images/1.jpg" alt="Banner Image" class="banner-image">
+   <!-- 插入的文字 -->
+  <p class="banner-text">蜡笔小新</p>
+ <p class="banner-text2">臼井仪人先生说，之所以会创造出小新这个形象，
+  是因为他在观察自己的孩子的时候，发现小孩子的想法往往非常独特，以至于作者被
+  小孩的世界所吸引。小孩有乖巧和调皮的两面性，这种两面性对作者来讲是十分有趣的。反过
+  来作者正是在自己的作品中反映了这一两面性。他同时承认“小新”有一部分是他自己的翻版。据
+  他透露，蜡笔小新里有许多内容是他现实生活的写照，例如：小新爸爸造型与他本人有些相似，小新
+  和他爸爸两道浓眉毛乃是因作者自己眉毛稀疏.</p>
+</div>
+</body>
+</html>
